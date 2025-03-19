@@ -3,17 +3,32 @@ import requests
 import warnings
 import logging
 import time
+from logging.handlers import RotatingFileHandler
 
 # Настройка логирования
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("redfish_tests.log"),
-        logging.StreamHandler()
-    ]
-)
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+formatter = logging.Formatter(
+    '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
+
+file_handler = RotatingFileHandler(
+    'redfish_tests.log', 
+    maxBytes=0,
+    backupCount=0,
+    encoding='utf-8'
+)
+
+file_handler.setFormatter(formatter)
+file_handler.setLevel(logging.DEBUG) 
+
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(formatter)
+console_handler.setLevel(logging.INFO)
+
+# Добавляем обработчики к логгеру
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
 
 # Фикстура конфигурации для аутенфикации в Bmc
 @pytest.fixture(scope="session")
@@ -125,7 +140,7 @@ def test_power_management(auth_session, systems_url):
         headers={"Content-Type": "application/json"}
     )
 
-    assert response.status_code == 204, (
+    assert response.status_code == 22, (
         f"Ожидался статус 202 Accepted, получен {response.status_code}. " # !!!Bmc возвращвет статус 204!!!
         f"Ответ сервера: {response.text}"
     )
@@ -161,4 +176,6 @@ def pytest_runtest_makereport(item, call):
         logger.error(f"Тест {item.name} провален с ошибкой: {result.longrepr}")
 
 if __name__ == "__main__":
+    logger.info("Запуск тестовой сессии")
     pytest.main(["-v", __file__])
+    logger.info("Завершение тестовой сессии")

@@ -1,0 +1,44 @@
+2025-03-19 11:16:34,656 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:16:36,714 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:16:36,715 - test_redsh - INFO - Запуск теста аутентификации
+2025-03-19 11:16:37,735 - test_redsh - INFO - Аутентификация прошла успешно
+2025-03-19 11:16:37,903 - test_redsh - INFO - Сессия успешно удалена
+2025-03-19 11:16:37,909 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:16:38,840 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:16:38,840 - test_redsh - INFO - Запуск теста получения информации о системе
+2025-03-19 11:16:39,608 - test_redsh - INFO - Основные поля присутствуют в ответе
+2025-03-19 11:16:39,734 - test_redsh - INFO - Сессия успешно удалена
+2025-03-19 11:16:39,737 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:16:40,876 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:16:40,877 - test_redsh - INFO - Запуск теста управления питанием
+2025-03-19 11:16:42,055 - test_redsh - INFO - Сессия успешно удалена
+2025-03-19 11:22:20,062 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:22:21,254 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:22:21,255 - test_redsh - INFO - Запуск теста аутентификации
+2025-03-19 11:22:22,069 - test_redsh - INFO - Аутентификация прошла успешно
+2025-03-19 11:22:22,261 - test_redsh - INFO - Сессия успешно удалена
+2025-03-19 11:22:22,267 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:22:23,110 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:22:23,112 - test_redsh - INFO - Запуск теста получения информации о системе
+2025-03-19 11:22:23,614 - test_redsh - DEBUG - Ответ сервера: {'@odata.id': '/redfish/v1/Systems/system', '@odata.type': '#ComputerSystem.v1_22_0.ComputerSystem', 'Actions': {'#ComputerSystem.Reset': {'@Redfish.ActionInfo': '/redfish/v1/Systems/system/ResetActionInfo', 'target': '/redfish/v1/Systems/system/Actions/ComputerSystem.Reset'}}, 'Bios': {'@odata.id': '/redfish/v1/Systems/system/Bios'}, 'Boot': {'AutomaticRetryAttempts': 3, 'AutomaticRetryConfig': 'RetryAttempts', 'AutomaticRetryConfig@Redfish.AllowableValues': ['Disabled', 'RetryAttempts'], 'BootSourceOverrideEnabled': 'Disabled', 'BootSourceOverrideMode': 'UEFI', 'BootSourceOverrideMode@Redfish.AllowableValues': ['Legacy', 'UEFI'], 'BootSourceOverrideTarget': 'None', 'BootSourceOverrideTarget@Redfish.AllowableValues': ['None', 'Pxe', 'Hdd', 'Cd', 'Diags', 'BiosSetup', 'Usb'], 'RemainingAutomaticRetryAttempts': 3, 'StopBootOnFault': 'Never', 'TrustedModuleRequiredToBoot': 'Disabled'}, 'BootProgress': {'LastState': 'None', 'LastStateTime': '1970-01-01T00:00:00.000000+00:00'}, 'Description': 'Computer System', 'FabricAdapters': {'@odata.id': '/redfish/v1/Systems/system/FabricAdapters'}, 'GraphicalConsole': {'ConnectTypesSupported': ['KVMIP'], 'MaxConcurrentSessions': 4, 'ServiceEnabled': True}, 'HostWatchdogTimer': {'FunctionEnabled': False, 'Status': {'State': 'Enabled'}, 'TimeoutAction': 'ResetSystem'}, 'Id': 'system', 'IndicatorLED': 'Off', 'LastResetTime': '2025-02-15T10:16:03+00:00', 'Links': {'Chassis': [{'@odata.id': '/redfish/v1/Chassis/chassis'}], 'ManagedBy': [{'@odata.id': '/redfish/v1/Managers/bmc'}]}, 'LocationIndicatorActive': False, 'LogServices': {'@odata.id': '/redfish/v1/Systems/system/LogServices'}, 'Memory': {'@odata.id': '/redfish/v1/Systems/system/Memory'}, 'MemorySummary': {'TotalSystemMemoryGiB': 0.0}, 'Name': 'system', 'PCIeDevices': [], 'PCIeDevices@odata.count': 0, 'PowerRestorePolicy': 'AlwaysOff', 'PowerState': 'On', 'ProcessorSummary': {'Count': 0}, 'Processors': {'@odata.id': '/redfish/v1/Systems/system/Processors'}, 'SerialConsole': {'IPMI': {'ServiceEnabled': True}, 'MaxConcurrentSessions': 15, 'SSH': {'HotKeySequenceDisplay': 'Press ~. to exit console', 'Port': 2200, 'ServiceEnabled': True}}, 'Status': {'Health': 'OK', 'State': 'Quiesced'}, 'Storage': {'@odata.id': '/redfish/v1/Systems/system/Storage'}, 'SystemType': 'Physical'}
+2025-03-19 11:22:23,614 - test_redsh - INFO - Основные поля присутствуют в ответе
+2025-03-19 11:22:23,704 - test_redsh - INFO - Сессия успешно удалена
+2025-03-19 11:22:23,706 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:22:24,475 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:22:24,475 - test_redsh - INFO - Запуск теста управления питанием
+2025-03-19 11:22:25,054 - test_redsh - INFO - Сессия успешно удалена
+2025-03-19 11:36:20,079 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:36:21,814 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:36:21,815 - test_redsh - INFO - Запуск теста аутентификации
+2025-03-19 11:36:22,708 - test_redsh - INFO - Аутентификация прошла успешно
+2025-03-19 11:36:22,939 - test_redsh - INFO - Сессия успешно удалена
+2025-03-19 11:36:22,943 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:36:23,836 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:36:23,837 - test_redsh - INFO - Запуск теста получения информации о системе
+2025-03-19 11:36:24,496 - test_redsh - DEBUG - Ответ сервера: {'@odata.id': '/redfish/v1/Systems/system', '@odata.type': '#ComputerSystem.v1_22_0.ComputerSystem', 'Actions': {'#ComputerSystem.Reset': {'@Redfish.ActionInfo': '/redfish/v1/Systems/system/ResetActionInfo', 'target': '/redfish/v1/Systems/system/Actions/ComputerSystem.Reset'}}, 'Bios': {'@odata.id': '/redfish/v1/Systems/system/Bios'}, 'Boot': {'AutomaticRetryAttempts': 3, 'AutomaticRetryConfig': 'RetryAttempts', 'AutomaticRetryConfig@Redfish.AllowableValues': ['Disabled', 'RetryAttempts'], 'BootSourceOverrideEnabled': 'Disabled', 'BootSourceOverrideMode': 'UEFI', 'BootSourceOverrideMode@Redfish.AllowableValues': ['Legacy', 'UEFI'], 'BootSourceOverrideTarget': 'None', 'BootSourceOverrideTarget@Redfish.AllowableValues': ['None', 'Pxe', 'Hdd', 'Cd', 'Diags', 'BiosSetup', 'Usb'], 'RemainingAutomaticRetryAttempts': 3, 'StopBootOnFault': 'Never', 'TrustedModuleRequiredToBoot': 'Disabled'}, 'BootProgress': {'LastState': 'None', 'LastStateTime': '1970-01-01T00:00:00.000000+00:00'}, 'Description': 'Computer System', 'FabricAdapters': {'@odata.id': '/redfish/v1/Systems/system/FabricAdapters'}, 'GraphicalConsole': {'ConnectTypesSupported': ['KVMIP'], 'MaxConcurrentSessions': 4, 'ServiceEnabled': True}, 'HostWatchdogTimer': {'FunctionEnabled': False, 'Status': {'State': 'Enabled'}, 'TimeoutAction': 'ResetSystem'}, 'Id': 'system', 'IndicatorLED': 'Off', 'LastResetTime': '2025-02-15T10:16:03+00:00', 'Links': {'Chassis': [{'@odata.id': '/redfish/v1/Chassis/chassis'}], 'ManagedBy': [{'@odata.id': '/redfish/v1/Managers/bmc'}]}, 'LocationIndicatorActive': False, 'LogServices': {'@odata.id': '/redfish/v1/Systems/system/LogServices'}, 'Memory': {'@odata.id': '/redfish/v1/Systems/system/Memory'}, 'MemorySummary': {'TotalSystemMemoryGiB': 0.0}, 'Name': 'system', 'PCIeDevices': [], 'PCIeDevices@odata.count': 0, 'PowerRestorePolicy': 'AlwaysOff', 'PowerState': 'Off', 'ProcessorSummary': {'Count': 0}, 'Processors': {'@odata.id': '/redfish/v1/Systems/system/Processors'}, 'SerialConsole': {'IPMI': {'ServiceEnabled': True}, 'MaxConcurrentSessions': 15, 'SSH': {'HotKeySequenceDisplay': 'Press ~. to exit console', 'Port': 2200, 'ServiceEnabled': True}}, 'Status': {'Health': 'OK', 'State': 'Disabled'}, 'Storage': {'@odata.id': '/redfish/v1/Systems/system/Storage'}, 'SystemType': 'Physical'}
+2025-03-19 11:36:24,496 - test_redsh - INFO - Основные поля присутствуют в ответе
+2025-03-19 11:36:24,669 - test_redsh - INFO - Сессия успешно удалена
+2025-03-19 11:36:24,673 - test_redsh - INFO - Инициализация новой сессии
+2025-03-19 11:36:25,651 - test_redsh - INFO - Сессия успешно создана
+2025-03-19 11:36:25,652 - test_redsh - INFO - Запуск теста управления питанием
+2025-03-19 11:36:26,526 - test_redsh - INFO - Сессия успешно удалена
